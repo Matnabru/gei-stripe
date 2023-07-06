@@ -1,9 +1,12 @@
 import { iGraphQL } from 'i-graphql';
 import { ObjectId } from 'mongodb';
+import Stripe from 'stripe';
 
 export const orm = async () => {
   return iGraphQL<
-    {},
+    {
+      SubscriptionCollection: Stripe.Subscription
+    },
     {
       _id: () => string;
       createdAt: () => string;

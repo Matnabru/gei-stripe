@@ -15,6 +15,7 @@
   "dependencies": {
     "@azure/functions": "^3.5.0",
     "@octokit/oauth-app": "^4.2.0",
+    "@types/ws": "^8.5.3",
     "dotenv": "^16.0.3",
     "dotenv-cli": "^6.0.0",
     "fetch": "^1.1.0",
@@ -25,9 +26,10 @@
     "jsonwebtoken": "^9.0.0",
     "jwt-decode": "^3.1.2",
     "mailgun.js": "^8.0.6",
-    "mongodb": "^4.13.0",
+    "mongodb": "^5.1.10",
     "node-fetch": "^3.3.0",
     "stucco-js": "^0.10.18",
-    "ws": "^8.12.0"
+    "ws": "^8.12.0",
+    "stripe": "^11.4.0"
   }
 }

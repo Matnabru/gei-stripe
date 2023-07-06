@@ -1,0 +1,9 @@
+{
+    "resolvers": {
+        "Mutation.webhook": {
+            "resolve": {
+                "name": "lib/Mutation/webhook"
+            }
+        }
+    }
+}
