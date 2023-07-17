@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run -ws build --if-present",
-    "integrate": "npm run -ws integrate --if-present"
+    "integrate": "npm run -ws integrate --if-present",
+    "integrate:env": "dotenv -e .env npm run -ws integrate --if-present"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,10 @@
     "packages/integrations/gei-users",
     "packages/integrations/gei-s3",
     "packages/integrations/gei-stripe"
+  ],
+  "nohoist": [
+    "**/stucco",
+    "**/stucco/**"
   ],
   "bugs": {
     "url": "https://github.com/graphql-editor/graphql-editor-integrations/issues"

@@ -1,8 +1,10 @@
 {
     "resolvers": {
-        "Mutation.webhook": {
+        "Mutation.initStripecustomer": {
+            "name": "initStripeCustomer",
+            "description": "Stripe customer init",
             "resolve": {
-                "name": "lib/Mutation/webhook"
+                "name": "Mutation.initStripecustomer.handler"
             }
         }
     }

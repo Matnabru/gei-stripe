@@ -78,7 +78,7 @@ export const ReturnTypes: Record<string,any> = {
 		getCustomerInfo:"StripeCustomer"
 	},
 	Mutation:{
-		initStripeCustomer:"StripeCustomer",
+		initStripeCustomer:"Boolean",
 		stripeCustomerMutationOps:"StripeCustomerMutationOps",
 		webhook:"String"
 	},

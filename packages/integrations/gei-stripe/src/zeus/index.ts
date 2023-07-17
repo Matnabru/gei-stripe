@@ -845,7 +845,7 @@ stripeCustomerQueryOps?: [{	customerId: string | Variable<any, string>},ValueTyp
 		__typename?: boolean | `@${string}`
 }>;
 	["Mutation"]: AliasType<{
-initStripeCustomer?: [{	initStripeCustomerInput: ValueTypes["InitStripeCustomerInput"] | Variable<any, string>},ValueTypes["StripeCustomer"]],
+initStripeCustomer?: [{	initStripeCustomerInput: ValueTypes["InitStripeCustomerInput"] | Variable<any, string>},boolean | `@${string}`],
 stripeCustomerMutationOps?: [{	customerId: string | Variable<any, string>},ValueTypes["StripeCustomerMutationOps"]],
 	/** entry point for Weebhooks. */
 	webhook?:boolean | `@${string}`,
@@ -869,17 +869,17 @@ generateCheckoutSession?: [{	generateCheckoutSessionInput: ValueTypes["GenerateC
 };
 	["AddressInput"]: {
 	/** City, district, suburb, town, village, or ward. */
-	city?: string | undefined | null | Variable<any, string>,
+	city: string | Variable<any, string>,
 	/** Two-letter country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)). */
-	country?: string | undefined | null | Variable<any, string>,
+	country: string | Variable<any, string>,
 	/** Address line 1 (e.g., street, block, PO Box, or company name). */
-	line1?: string | undefined | null | Variable<any, string>,
+	line1: string | Variable<any, string>,
 	/** Address line 2 (e.g., apartment, suite, unit, or building). */
-	line2?: string | undefined | null | Variable<any, string>,
+	line2: string | Variable<any, string>,
 	/** ZIP or postal code. */
-	postal_code?: string | undefined | null | Variable<any, string>,
+	postal_code: string | Variable<any, string>,
 	/** State, county, province, prefecture, or region. */
-	state?: string | undefined | null | Variable<any, string>
+	state: string | Variable<any, string>
 };
 	["StripeCustomer"]: AliasType<{
 	customerId?:boolean | `@${string}`,
@@ -1037,7 +1037,7 @@ stripeCustomerQueryOps?: [{	customerId: string},ResolverInputTypes["StripeCustom
 		__typename?: boolean | `@${string}`
 }>;
 	["Mutation"]: AliasType<{
-initStripeCustomer?: [{	initStripeCustomerInput: ResolverInputTypes["InitStripeCustomerInput"]},ResolverInputTypes["StripeCustomer"]],
+initStripeCustomer?: [{	initStripeCustomerInput: ResolverInputTypes["InitStripeCustomerInput"]},boolean | `@${string}`],
 stripeCustomerMutationOps?: [{	customerId: string},ResolverInputTypes["StripeCustomerMutationOps"]],
 	/** entry point for Weebhooks. */
 	webhook?:boolean | `@${string}`,
@@ -1061,17 +1061,17 @@ generateCheckoutSession?: [{	generateCheckoutSessionInput: ResolverInputTypes["G
 };
 	["AddressInput"]: {
 	/** City, district, suburb, town, village, or ward. */
-	city?: string | undefined | null,
+	city: string,
 	/** Two-letter country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)). */
-	country?: string | undefined | null,
+	country: string,
 	/** Address line 1 (e.g., street, block, PO Box, or company name). */
-	line1?: string | undefined | null,
+	line1: string,
 	/** Address line 2 (e.g., apartment, suite, unit, or building). */
-	line2?: string | undefined | null,
+	line2: string,
 	/** ZIP or postal code. */
-	postal_code?: string | undefined | null,
+	postal_code: string,
 	/** State, county, province, prefecture, or region. */
-	state?: string | undefined | null
+	state: string
 };
 	["StripeCustomer"]: AliasType<{
 	customerId?:boolean | `@${string}`,
@@ -1227,7 +1227,7 @@ export type ModelTypes = {
 		getCustomerInfo?: ModelTypes["StripeCustomer"] | undefined
 };
 	["Mutation"]: {
-		initStripeCustomer?: ModelTypes["StripeCustomer"] | undefined,
+		initStripeCustomer: boolean,
 	stripeCustomerMutationOps?: ModelTypes["StripeCustomerMutationOps"] | undefined,
 	/** entry point for Weebhooks. */
 	webhook?: string | undefined
@@ -1249,17 +1249,17 @@ export type ModelTypes = {
 };
 	["AddressInput"]: {
 	/** City, district, suburb, town, village, or ward. */
-	city?: string | undefined,
+	city: string,
 	/** Two-letter country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)). */
-	country?: string | undefined,
+	country: string,
 	/** Address line 1 (e.g., street, block, PO Box, or company name). */
-	line1?: string | undefined,
+	line1: string,
 	/** Address line 2 (e.g., apartment, suite, unit, or building). */
-	line2?: string | undefined,
+	line2: string,
 	/** ZIP or postal code. */
-	postal_code?: string | undefined,
+	postal_code: string,
 	/** State, county, province, prefecture, or region. */
-	state?: string | undefined
+	state: string
 };
 	["StripeCustomer"]: {
 		customerId: string,
@@ -1407,7 +1407,7 @@ export type GraphQLTypes = {
 };
 	["Mutation"]: {
 	__typename: "Mutation",
-	initStripeCustomer?: GraphQLTypes["StripeCustomer"] | undefined,
+	initStripeCustomer: boolean,
 	stripeCustomerMutationOps?: GraphQLTypes["StripeCustomerMutationOps"] | undefined,
 	/** entry point for Weebhooks. */
 	webhook?: string | undefined
@@ -1430,17 +1430,17 @@ export type GraphQLTypes = {
 };
 	["AddressInput"]: {
 		/** City, district, suburb, town, village, or ward. */
-	city?: string | undefined,
+	city: string,
 	/** Two-letter country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)). */
-	country?: string | undefined,
+	country: string,
 	/** Address line 1 (e.g., street, block, PO Box, or company name). */
-	line1?: string | undefined,
+	line1: string,
 	/** Address line 2 (e.g., apartment, suite, unit, or building). */
-	line2?: string | undefined,
+	line2: string,
 	/** ZIP or postal code. */
-	postal_code?: string | undefined,
+	postal_code: string,
 	/** State, county, province, prefecture, or region. */
-	state?: string | undefined
+	state: string
 };
 	["StripeCustomer"]: {
 	__typename: "StripeCustomer",

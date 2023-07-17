@@ -19,9 +19,9 @@
     "gei-rest": "^0.1.1",
     "gei-s3": "^0.0.2",
     "gei-users": "^0.4.62",
-    "stucco-js": "^0.10.17"
+    "stucco-js": "^0.10.18"
   },
   "peerDependencies": {
-    "graphql-editor-cli": "^0.7.2"
+    "graphql-editor-cli": "^0.8.5"
   }
 }
