@@ -1,0 +1,25 @@
+{
+    "resolvers": {
+        "Mutation.initStripeCustomer": {
+            "noCode": {
+                "package": "gei-stripe",
+                "version": "0.0.2",
+                "resolver": "Mutation.initStripeCustomer"
+            },
+            "resolve": {
+                "name": "gei-stripe@Mutation.initStripeCustomer"
+            }
+        },
+        "PubMutation.uploadFile": {
+            "noCode": {
+                "package": "gei-s3",
+                "version": "0.0.2",
+                "resolver": "Mutation.uploadFile"
+            },
+            "resolve": {
+                "name": "gei-s3@Mutation.uploadFile"
+            }
+        }
+    }
+    
+}

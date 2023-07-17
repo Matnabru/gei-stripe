@@ -1,0 +1,33 @@
+{
+  "name": "sandbox",
+  "private": true,
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "gecli dev",
+    "schema": "gecli schema",
+    "get-integration": "gecli cloud install",
+    "update": "npm run schema && npm run get-integration"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gei-rest": "^0.1.1",
+    "gei-s3": "^0.0.2",
+    "mongodb": "5.1.0",
+    "stucco-js": "0.10.18"
+  },
+  "peerDependencies": {
+    "graphql-editor-cli": "0.8.6",
+    "typescript": "4.8.3",
+    "mongodb": "5.1.0"
+  },
+  "devDependencies": {
+    "graphql-editor-cli": "0.8.6",
+    "typescript": "4.8.3"
+  }
+}

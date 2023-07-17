@@ -1,0 +1,10 @@
+{
+    "namespace": "editor-integrations",
+    "project": "stripe-integration",
+    "projectVersion": "latest",
+    "backendSrc": "",
+    "schemaDir": "",
+    "typingsDir": "",
+    "typingsEnv": "node",
+    "typingsHost": ""
+}
