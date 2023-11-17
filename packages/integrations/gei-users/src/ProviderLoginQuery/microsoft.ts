@@ -34,7 +34,7 @@ export const handler = async (input: FieldResolveInput) =>
     const { id, refreshTokenId, register } = await addUserAndConnectSocial({
       o,
       id: profile.id,
-      username: profile.mail,
+      username: profile.userPrincipalName || profile.userPrincipalName,
       social: SocialKind.Microsoft,
     });
 
